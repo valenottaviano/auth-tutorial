@@ -46,8 +46,7 @@ export function LoginForm() {
     startTransition(() => {
       login(values).then((data) => {
         setError(data?.error);
-        // TODO: This will be used for two factor authentication
-        // setSuccess(data.success);
+        setSuccess(data?.success);
       });
     });
   };
