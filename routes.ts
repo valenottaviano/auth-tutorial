@@ -1,6 +1,6 @@
 // An array of routes that are public. They does not require authentication.
 
-export const publicRoutes = ["/"];
+export const publicRoutes = ["/", "/auth/new-verification"];
 
 // Routes used for authentication and will redirect to /settings
 export const authRoutes = ["/auth/login", "/auth/register", "/auth/error"];
